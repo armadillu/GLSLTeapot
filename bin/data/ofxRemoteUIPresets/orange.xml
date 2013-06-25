@@ -1,0 +1,48 @@
+<OFX_REMOTE_UI_PARAMS>
+    <REMOTEUI_PARAM_BOOL paramName="animateLight">1</REMOTEUI_PARAM_BOOL>
+    <REMOTEUI_PARAM_COLOR paramName="lightAmbient">
+        <R>39</R>
+        <G>39</G>
+        <B>39</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_COLOR paramName="lightDiffuse">
+        <R>172</R>
+        <G>172</G>
+        <B>172</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_FLOAT paramName="lightH">10.206911087</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_COLOR paramName="lightSpecular">
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_FLOAT paramName="lightSpeed">0.670595109</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_COLOR paramName="matAmbient">
+        <R>248</R>
+        <G>1</G>
+        <B>7</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_COLOR paramName="matDiffuse">
+        <R>251</R>
+        <G>169</G>
+        <B>7</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_COLOR paramName="matSpecular">
+        <R>222</R>
+        <G>248</G>
+        <B>243</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_FLOAT paramName="shaderVal1">0.950965226</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="shaderVal2">0.242587462</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="shaderVal3">2.000000000</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_ENUM paramName="showInShader">0</REMOTEUI_PARAM_ENUM>
+    <REMOTEUI_PARAM_FLOAT paramName="specularClamp">0.086684287</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="specularGain">2.000000000</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="specularPow">0.337584257</REMOTEUI_PARAM_FLOAT>
+</OFX_REMOTE_UI_PARAMS>
