@@ -10,7 +10,7 @@ void testApp::setup(){
 	
 	isShaderDirty = true;
 
-	cam.setDistance(400);
+	cam.setDistance(450);
 	cam.setFov(30);
 
 	light.enable();
@@ -24,13 +24,20 @@ void testApp::setup(){
 
 	OFX_REMOTEUI_SERVER_SET_UPCOMING_PARAM_COLOR( ofColor(0,255,0,64) ); // set a bg color for the upcoming params
 	OFX_REMOTEUI_SERVER_SHARE_PARAM(specularGain,0,2);
-	OFX_REMOTEUI_SERVER_SHARE_PARAM(specularClamp,0,2);
-	OFX_REMOTEUI_SERVER_SHARE_PARAM(specularPow,0,2);
+	OFX_REMOTEUI_SERVER_SHARE_PARAM(specularClamp,0,1);
+	OFX_REMOTEUI_SERVER_SHARE_PARAM(specularPow,0,1);
+
+	OFX_REMOTEUI_SERVER_SET_UPCOMING_PARAM_COLOR( ofColor(255,255,0,64) ); // set a bg color for the upcoming params
+	OFX_REMOTEUI_SERVER_SHARE_PARAM(eyeSpecularGain,0,2);
+	OFX_REMOTEUI_SERVER_SHARE_PARAM(eyeSpecularClamp,0,1);
+	OFX_REMOTEUI_SERVER_SHARE_PARAM(eyeSpecularPow,0,1);
 
 	OFX_REMOTEUI_SERVER_SET_UPCOMING_PARAM_COLOR( ofColor(255,0,0,64) ); // set a bg color for the upcoming params
 	OFX_REMOTEUI_SERVER_SHARE_PARAM(timeSpeed, 0, 1);
 	OFX_REMOTEUI_SERVER_SHARE_PARAM(lightSpeed,0,10);
 	OFX_REMOTEUI_SERVER_SHARE_PARAM(lightH,-100,100);
+	OFX_REMOTEUI_SERVER_SHARE_PARAM(lightDist,100,600);
+
 	OFX_REMOTEUI_SERVER_SHARE_PARAM(animateLight);
 	OFX_REMOTEUI_SERVER_SHARE_PARAM(animateCam);
 
@@ -38,7 +45,7 @@ void testApp::setup(){
 	OFX_REMOTEUI_SERVER_SET_UPCOMING_PARAM_COLOR( ofColor(0,255,255,64) ); // set a bg color for the upcoming params
 	vector<string> showL; showL.push_back("SHOW_ALL"); showL.push_back("SHOW_N");
 	showL.push_back("SHOW_L"); showL.push_back("SHOW_E"); showL.push_back("SHOW_R");
-	showL.push_back("SHOW_H");showL.push_back("SHOW_F");
+	showL.push_back("SHOW_SPECULAR");showL.push_back("SHOW_EYE_SPECULAR");
 	OFX_REMOTEUI_SERVER_SHARE_ENUM_PARAM(showInShader, SHOW_ALL, NUM_SHOWS-1, showL);
 
 	OFX_REMOTEUI_SERVER_SET_UPCOMING_PARAM_COLOR( ofColor(255,0,255,64) ); // set a bg color for the upcoming params
@@ -84,9 +91,9 @@ void testApp::update(){
 	light.setSpecularColor(lightSpecular);
 
 
-	float r = 190;
 
 	if(animateLight || ofGetFrameNum() < 2){
+		float r = lightDist;
 		lightPos = ofVec3f(r * sin(lightSpeed * ofGetElapsedTimef()),
 						   lightH + 50,
 						   r * cos(lightSpeed * ofGetElapsedTimef()) );
@@ -94,7 +101,7 @@ void testApp::update(){
 	light.setGlobalPosition(lightPos);
 
 	if(animateCam || ofGetFrameNum() < 2){
-		r = 450;
+		float r = 450;
 		ofVec3f camPos = ofVec3f(
 								 r * sin(lightSpeed * ofGetElapsedTimef() * 1.2),
 								 lightH + 100 + 20 * sin( ofGetElapsedTimef()),
@@ -133,6 +140,10 @@ void testApp::draw(){
 		mShdPhong->setUniform1f("specularGain", specularGain);
 		mShdPhong->setUniform1f("specularClamp", specularClamp);
 		mShdPhong->setUniform1f("specularPow", specularPow);
+		mShdPhong->setUniform1f("eyeSpecularGain", eyeSpecularGain);
+		mShdPhong->setUniform1f("eyeSpecularClamp", eyeSpecularClamp);
+		mShdPhong->setUniform1f("eyeSpecularPow", eyeSpecularPow);
+
 		mShdPhong->setUniform1f("showInShader", showInShader);
 
 		glutSolidTeapot(80);
