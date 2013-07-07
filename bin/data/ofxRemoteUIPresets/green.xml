@@ -1,5 +1,10 @@
 <OFX_REMOTE_UI_PARAMS>
+    <REMOTEUI_PARAM_BOOL paramName="animateCam">0</REMOTEUI_PARAM_BOOL>
     <REMOTEUI_PARAM_BOOL paramName="animateLight">1</REMOTEUI_PARAM_BOOL>
+    <REMOTEUI_PARAM_BOOL paramName="doShader">1</REMOTEUI_PARAM_BOOL>
+    <REMOTEUI_PARAM_FLOAT paramName="eyeSpecularClamp">1.000000000</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="eyeSpecularGain">2.000000000</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="eyeSpecularPow">0.259712845</REMOTEUI_PARAM_FLOAT>
     <REMOTEUI_PARAM_COLOR paramName="lightAmbient">
         <R>39</R>
         <G>39</G>
@@ -12,6 +17,7 @@
         <B>172</B>
         <A>255</A>
     </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_FLOAT paramName="lightDist">329.852905273</REMOTEUI_PARAM_FLOAT>
     <REMOTEUI_PARAM_FLOAT paramName="lightH">10.206911087</REMOTEUI_PARAM_FLOAT>
     <REMOTEUI_PARAM_COLOR paramName="lightSpecular">
         <R>255</R>
@@ -21,28 +27,29 @@
     </REMOTEUI_PARAM_COLOR>
     <REMOTEUI_PARAM_FLOAT paramName="lightSpeed">0.670595109</REMOTEUI_PARAM_FLOAT>
     <REMOTEUI_PARAM_COLOR paramName="matAmbient">
-        <R>248</R>
-        <G>1</G>
-        <B>7</B>
+        <R>61</R>
+        <G>161</G>
+        <B>0</B>
         <A>255</A>
     </REMOTEUI_PARAM_COLOR>
     <REMOTEUI_PARAM_COLOR paramName="matDiffuse">
-        <R>251</R>
-        <G>169</G>
-        <B>7</B>
+        <R>92</R>
+        <G>242</G>
+        <B>0</B>
         <A>255</A>
     </REMOTEUI_PARAM_COLOR>
     <REMOTEUI_PARAM_COLOR paramName="matSpecular">
-        <R>222</R>
-        <G>248</G>
-        <B>243</B>
+        <R>247</R>
+        <G>244</G>
+        <B>234</B>
         <A>255</A>
     </REMOTEUI_PARAM_COLOR>
     <REMOTEUI_PARAM_FLOAT paramName="shaderVal1">0.950965226</REMOTEUI_PARAM_FLOAT>
     <REMOTEUI_PARAM_FLOAT paramName="shaderVal2">0.242587462</REMOTEUI_PARAM_FLOAT>
     <REMOTEUI_PARAM_FLOAT paramName="shaderVal3">2.000000000</REMOTEUI_PARAM_FLOAT>
-    <REMOTEUI_PARAM_ENUM paramName="showInShader">0</REMOTEUI_PARAM_ENUM>
-    <REMOTEUI_PARAM_FLOAT paramName="specularClamp">0.086684287</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_ENUM paramName="showInShader">5</REMOTEUI_PARAM_ENUM>
+    <REMOTEUI_PARAM_FLOAT paramName="specularClamp">0.101597689</REMOTEUI_PARAM_FLOAT>
     <REMOTEUI_PARAM_FLOAT paramName="specularGain">2.000000000</REMOTEUI_PARAM_FLOAT>
-    <REMOTEUI_PARAM_FLOAT paramName="specularPow">0.337584257</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="specularPow">0.194714248</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="timeSpeed">0.125339672</REMOTEUI_PARAM_FLOAT>
 </OFX_REMOTE_UI_PARAMS>

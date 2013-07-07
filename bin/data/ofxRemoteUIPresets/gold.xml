@@ -1,0 +1,63 @@
+<OFX_REMOTE_UI_PARAMS>
+    <REMOTEUI_PARAM_BOOL paramName="animateCam">0</REMOTEUI_PARAM_BOOL>
+    <REMOTEUI_PARAM_BOOL paramName="animateLight">0</REMOTEUI_PARAM_BOOL>
+    <REMOTEUI_PARAM_FLOAT paramName="diffuseGain">1.082306385</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="diffusePow">1.000000000</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_BOOL paramName="doShader">1</REMOTEUI_PARAM_BOOL>
+    <REMOTEUI_PARAM_BOOL paramName="drawAxes">0</REMOTEUI_PARAM_BOOL>
+    <REMOTEUI_PARAM_FLOAT paramName="eyeSpecularClamp">1.000000000</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="eyeSpecularGain">1.148887157</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="eyeSpecularPow">0.570537329</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="gpuBlur.blurOffset">3.386702061</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_INT paramName="gpuBlur.blurOverlayGain">255</REMOTEUI_PARAM_INT>
+    <REMOTEUI_PARAM_INT paramName="gpuBlur.blurPasses">0</REMOTEUI_PARAM_INT>
+    <REMOTEUI_PARAM_INT paramName="gpuBlur.numBlurOverlays">2</REMOTEUI_PARAM_INT>
+    <REMOTEUI_PARAM_COLOR paramName="lightAmbient">
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_COLOR paramName="lightDiffuse">
+        <R>254</R>
+        <G>220</G>
+        <B>133</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_FLOAT paramName="lightDist">145.774642944</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="lightH">57.005573273</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_COLOR paramName="lightSpecular">
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_FLOAT paramName="lightSpeed">1.562683344</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_COLOR paramName="matAmbient">
+        <R>44</R>
+        <G>35</G>
+        <B>2</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_COLOR paramName="matDiffuse">
+        <R>254</R>
+        <G>200</G>
+        <B>0</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_COLOR paramName="matSpecular">
+        <R>252</R>
+        <G>190</G>
+        <B>9</B>
+        <A>255</A>
+    </REMOTEUI_PARAM_COLOR>
+    <REMOTEUI_PARAM_FLOAT paramName="normalNoiseGain">1.138210893</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="normalNoiseX">5.000000000</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="normalNoiseY">0.603121638</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="normalNoiseZ">4.094604969</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_ENUM paramName="showInShader">0</REMOTEUI_PARAM_ENUM>
+    <REMOTEUI_PARAM_FLOAT paramName="specularClamp">1.000000000</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="specularGain">1.905699849</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="specularPow">1.082856536</REMOTEUI_PARAM_FLOAT>
+    <REMOTEUI_PARAM_FLOAT paramName="timeSpeed">0.125339672</REMOTEUI_PARAM_FLOAT>
+</OFX_REMOTE_UI_PARAMS>

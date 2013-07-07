@@ -30,6 +30,9 @@
 		BB696C131777B34E00C7D0D9 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB696C001777B34E00C7D0D9 /* tinyxmlparser.cpp */; };
 		BB696C141777B34E00C7D0D9 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB696C021777B34E00C7D0D9 /* ofxXmlSettings.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		BBD4336B177DB06500E67CC1 /* CubeMap.frag in Sources */ = {isa = PBXBuildFile; fileRef = BBD43366177DB06500E67CC1 /* CubeMap.frag */; };
+		BBD4336C177DB06500E67CC1 /* CubeMap.vert in Sources */ = {isa = PBXBuildFile; fileRef = BBD43367177DB06500E67CC1 /* CubeMap.vert */; };
+		BBD4336D177DB06500E67CC1 /* ofxCubeMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBD43369177DB06500E67CC1 /* ofxCubeMap.cpp */; };
 		BBFF3D5517709F9A00FE7EEB /* ofxAutoReloadedShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBFF3D4A17709F9A00FE7EEB /* ofxAutoReloadedShader.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -83,7 +86,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		224DABD7160BB4DD00D77C02 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		22B0C317160B8AD600F94B1F /* phong.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = phong.frag; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		22B0C319160B8AD600F94B1F /* phong.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = phong.vert; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		BB696B4C1777AF1300C7D0D9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -133,7 +135,13 @@
 		BB696C001777B34E00C7D0D9 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
 		BB696C021777B34E00C7D0D9 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
 		BB696C031777B34E00C7D0D9 /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
+		BBA40A6817847700004E4025 /* ofxFboBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFboBlur.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		BBD43364177DB06500E67CC1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		BBD43366177DB06500E67CC1 /* CubeMap.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = CubeMap.frag; sourceTree = "<group>"; };
+		BBD43367177DB06500E67CC1 /* CubeMap.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = CubeMap.vert; sourceTree = "<group>"; };
+		BBD43369177DB06500E67CC1 /* ofxCubeMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxCubeMap.cpp; sourceTree = "<group>"; };
+		BBD4336A177DB06500E67CC1 /* ofxCubeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxCubeMap.h; sourceTree = "<group>"; };
 		BBFF3D4717709F9A00FE7EEB /* license.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.md; sourceTree = "<group>"; };
 		BBFF3D4817709F9A00FE7EEB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		BBFF3D4A17709F9A00FE7EEB /* ofxAutoReloadedShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxAutoReloadedShader.cpp; sourceTree = "<group>"; };
@@ -204,6 +212,8 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				BBA40A6617847700004E4025 /* ofxFboBlur */,
+				BBD43363177DB06500E67CC1 /* ofxCubeMap */,
 				BB696BD11777B34E00C7D0D9 /* ofxOsc */,
 				BB696BFB1777B34E00C7D0D9 /* ofxXmlSettings */,
 				BB696A371777AF1200C7D0D9 /* ofxRemoteUI */,
@@ -371,6 +381,23 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		BBA40A6617847700004E4025 /* ofxFboBlur */ = {
+			isa = PBXGroup;
+			children = (
+				BBA40A6717847700004E4025 /* src */,
+			);
+			name = ofxFboBlur;
+			path = ../../../../_Addons/ofxFboBlur;
+			sourceTree = "<group>";
+		};
+		BBA40A6717847700004E4025 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BBA40A6817847700004E4025 /* ofxFboBlur.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		BBAB23C913894ECA00AA2426 /* system frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +426,35 @@
 				BBAB23BE13894E4700AA2426 /* GLUT.framework */,
 			);
 			name = "3rd party frameworks";
+			sourceTree = "<group>";
+		};
+		BBD43363177DB06500E67CC1 /* ofxCubeMap */ = {
+			isa = PBXGroup;
+			children = (
+				BBD43364177DB06500E67CC1 /* README.md */,
+				BBD43365177DB06500E67CC1 /* shaders */,
+				BBD43368177DB06500E67CC1 /* src */,
+			);
+			name = ofxCubeMap;
+			path = ../../../../_AddonsByOthers/ofxCubeMap;
+			sourceTree = "<group>";
+		};
+		BBD43365177DB06500E67CC1 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				BBD43366177DB06500E67CC1 /* CubeMap.frag */,
+				BBD43367177DB06500E67CC1 /* CubeMap.vert */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		BBD43368177DB06500E67CC1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BBD43369177DB06500E67CC1 /* ofxCubeMap.cpp */,
+				BBD4336A177DB06500E67CC1 /* ofxCubeMap.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		BBFF3D2217709F9A00FE7EEB /* ofxAutoReloadedShader */ = {
@@ -454,7 +510,6 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				224DABD7160BB4DD00D77C02 /* README.md */,
 				22B0C30C160B8AD600F94B1F /* shaders */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
@@ -582,6 +637,9 @@
 				BB696C121777B34E00C7D0D9 /* tinyxmlerror.cpp in Sources */,
 				BB696C131777B34E00C7D0D9 /* tinyxmlparser.cpp in Sources */,
 				BB696C141777B34E00C7D0D9 /* ofxXmlSettings.cpp in Sources */,
+				BBD4336B177DB06500E67CC1 /* CubeMap.frag in Sources */,
+				BBD4336C177DB06500E67CC1 /* CubeMap.vert in Sources */,
+				BBD4336D177DB06500E67CC1 /* ofxCubeMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

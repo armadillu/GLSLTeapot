@@ -3,16 +3,19 @@
 #include "ofMain.h"
 #include "ofxAutoReloadedShader.h"
 #include "ofxRemoteUIServer.h"
-
+#include "ofxCubeMap.h"
+#include "ofxFboBlur.h"
 
 class testApp : public ofBaseApp{
 
-	enum showSH{SHOW_ALL, SHOW_N, SHOW_L, SHOW_E, SHOW_R, SHOW_SPECULAR, SHOW_EYE_SPECULAR, NUM_SHOWS};
+	enum showSH{SHOW_ALL, SHOW_N, SHOW_L, SHOW_E, SHOW_R, SHOW_SPECULAR, SHOW_EYE_SPECULAR, SHOW_NORMAL_NOISE, NUM_SHOWS};
 
 	ofEasyCam	cam;
-	ofxAutoReloadedShader*   mShdPhong;
+	ofxAutoReloadedShader*   shader;
 	ofMaterial	mMatMainMaterial;
 
+	ofxFboBlur gpuBlur;
+	
 	ofVec3f		lightPos;
 	ofLight		light;
 	
@@ -28,21 +31,36 @@ class testApp : public ofBaseApp{
 
 	bool animateLight;
 	bool animateCam;
+	bool doShader;
+	bool drawAxes;
 
 	float lightSpeed;
 	float lightDist;
 	float timeSpeed;
 	showSH showInShader;
+
+	float diffuseGain, diffusePow;
 	float specularGain, specularClamp, specularPow;
 	float eyeSpecularGain, eyeSpecularClamp, eyeSpecularPow;
 
 	//quick temp GLSL varrs
-	float shaderVal1;
-	float shaderVal2;
-	float shaderVal3;
+	float normalNoiseX;
+	float normalNoiseY;
+	float normalNoiseZ;
+	float normalNoiseGain;
+	float normalMix;
 
 	float lightH;
 
+	ofxCubeMap myCubeMap;
+	ofShader cubeMapShader;
+
+	ofImage tex;
+	ofImage normalTex;
+	ofImage normalNoiseTex;
+	ofImage normalLavaTex;
+	ofImage maskLavaTex;
+	
 	public:
 		void setup();
 		void update();
